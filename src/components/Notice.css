@@ -1,0 +1,44 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  height: 50%;
+  max-width: 640px;
+  background-color: #fff;
+  border-radius: 5px;
+  background-image: url(../image/winGame.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.popup-inner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .popup-inner {
+    width: 50%;
+  }
+}
